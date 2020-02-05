@@ -5,3 +5,39 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+$base-font-size: 16px;
+$max-width: 1024px;
+$main-spacing: 15px;
+$primary-color: teal;
+$text-color: black;
+$border-color: gray;
+$tile-text-color: white;
+
+html, body {
+    font-size: $base-font-size;
+    font-family: 'Montserrat', sans-serif;
+    color: $text-color;
+    font-weight: 300;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin: $main-spacing 0;
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+    margin: $main-spacing 0;
+  }
+  
+  p {
+    margin-bottom: $main-spacing;
+    line-height: 1.5;
+  }
+
+.container {
+    width: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+  }
